@@ -184,7 +184,7 @@
 </config>
 <config key="35">
 <entry key="old_column_name" type="xstring" value="p35"/>
-<entry key="new_column_name" type="xstring" value="nivelDesadoEstudio"/>
+<entry key="new_column_name" type="xstring" value="nivelDeseadoEstudio"/>
 <entry key="new_column_type" type="xint" value="0"/>
 </config>
 <config key="36">
@@ -305,6 +305,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="0c5f47c2-7e6b-4964-bb67-28855be40f2c"/>
+<entry key="file_store_id" type="xstring" value="ea8810a5-67b2-4028-bb13-7794629b8575"/>
 </config>
 </config>

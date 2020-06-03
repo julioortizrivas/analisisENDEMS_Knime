@@ -878,7 +878,7 @@
 <config key="meta_data"/>
 </config>
 <config key="column_spec_35">
-<entry key="column_name" type="xstring" value="nivelDesadoEstudio"/>
+<entry key="column_name" type="xstring" value="nivelDeseadoEstudio"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
 </config>

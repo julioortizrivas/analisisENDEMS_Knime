@@ -39,7 +39,7 @@
 </config>
 <config key="6">
 <entry key="old_column_name" type="xstring" value="p56"/>
-<entry key="new_column_name" type="xstring" value="asistemcia"/>
+<entry key="new_column_name" type="xstring" value="asistencia"/>
 <entry key="new_column_type" type="xint" value="0"/>
 </config>
 <config key="7">
@@ -134,7 +134,7 @@
 </config>
 <config key="25">
 <entry key="old_column_name" type="xstring" value="p63_14"/>
-<entry key="new_column_name" type="xstring" value="matrinomio"/>
+<entry key="new_column_name" type="xstring" value="matrimonio"/>
 <entry key="new_column_type" type="xint" value="0"/>
 </config>
 <config key="26">
@@ -159,7 +159,7 @@
 </config>
 <config key="30">
 <entry key="old_column_name" type="xstring" value="p63_19"/>
-<entry key="new_column_name" type="xstring" value="disgustoInstalaEs"/>
+<entry key="new_column_name" type="xstring" value="disgustoInstalacEs"/>
 <entry key="new_column_type" type="xint" value="0"/>
 </config>
 <config key="31">
@@ -204,7 +204,7 @@
 </config>
 <config key="39">
 <entry key="old_column_name" type="xstring" value="p73_9"/>
-<entry key="new_column_name" type="xstring" value="CamputadoraCasa"/>
+<entry key="new_column_name" type="xstring" value="computadoraCasa"/>
 <entry key="new_column_type" type="xint" value="0"/>
 </config>
 <config key="40">
@@ -224,7 +224,7 @@
 </config>
 <config key="43">
 <entry key="old_column_name" type="xstring" value="p74c"/>
-<entry key="new_column_name" type="xstring" value="ConsDroga"/>
+<entry key="new_column_name" type="xstring" value="consDroga"/>
 <entry key="new_column_type" type="xint" value="0"/>
 </config>
 <config key="44">
@@ -249,7 +249,7 @@
 </config>
 <config key="48">
 <entry key="old_column_name" type="xstring" value="s6"/>
-<entry key="new_column_name" type="xstring" value="empleadoActual"/>
+<entry key="new_column_name" type="xstring" value="empleoActual"/>
 <entry key="new_column_type" type="xint" value="0"/>
 </config>
 <config key="49">
@@ -305,6 +305,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="a34ba04a-9f60-41a2-8c88-790faf0e4007"/>
+<entry key="file_store_id" type="xstring" value="95c07f41-9004-4a18-82b6-5c9767c3b81d"/>
 </config>
 </config>
