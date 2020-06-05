@@ -8,12 +8,12 @@
 <config key="model">
 <entry key="scriptImports" type="xstring" value="// Your custom imports:%%00010"/>
 <entry key="scriptFields" type="xstring" value="// Your custom variables:%%00010"/>
-<entry key="scriptBody" type="xstring" value="// Enter your code here:%%00010%%00010//Reagrupar p47 y p48 (Se guarda el p47)%%00010if(c_p47 == 1 &amp;&amp; c_p48 == 1)%%00010%%00009out_p47 = 1;%%00010else if(c_p47 == 1 &amp;&amp; c_p48 == 2)%%00010%%00009out_p47 = 2;%%00010else if(c_p47 == 2 &amp;&amp; c_p48 == 1)%%00010%%00009out_p47 = 3;%%00010else if(c_p47 == 2 &amp;&amp; c_p48 == 2)%%00010%%00009out_p47 = 4;%%00010else if(c_p47 == 3 &amp;&amp; c_p48 == 1)%%00010%%00009out_p47 = 5;%%00010else if(c_p47 == 3 &amp;&amp; c_p48 == 2)%%00010%%00009out_p47 = 6;%%00010else if(c_p47 == 4 &amp;&amp; c_p48 == -1)%%00010%%00009out_p47 = 7;%%00010%%00010//Reagrupar p50 solo en minutos%%00010 out_p50h =  c_p50m + c_p50h*60;%%00010%%00010//Reagrupar p57%%00010%%00010if(c_p57 &lt; 6)%%00010%%00009out_p57 = 1;//Menor 6, calificacion reprobatoria%%00010else if(c_p57 &lt; 7)%%00010%%00009out_p57 = 2; //6 - 6.9%%00010else if(c_p57 &lt; 8)%%00010%%00009out_p57 = 3; //7 - 7.9%%00010else if(c_p57 &lt; 9)%%00010%%00009out_p57 = 4; //8 - 8.9%%00010else if(c_p57 &lt;= 10)%%00010%%00009out_p57 = 5; //9 - 10%%00010%%00010//Reagrupar p71%%00010%%00010if(c_p71 == 4)%%00010%%00009out_p71 = 1;%%00010else if(c_p71  == 1)%%00010%%00009out_p71 = 2;%%00010else if(c_p71  == 2)%%00010%%00009out_p71 = 3;%%00010else if(c_p71  == 3)%%00010%%00009out_p71 = 4;%%00009%%00010%%00010//Categorizar 73%%00010%%00010if(c_p73_1 == 1 || c_p73_2 == 1 || c_p73_15 == 1)%%00010%%00009out_p73_1 = 1;%%00010else%%00010%%00009out_p73_1 = 2;%%00010if(c_p73_4 == 1 || c_p73_10 == 1 || c_p73_13 == 1 || c_p73_14 == 1)%%00010%%00009out_p73_2 = 1;%%00010else%%00010%%00009out_p73_2 = 2;%%00010if(c_p73_3 == 1 || c_p73_6 == 1 || c_p73_8 == 1 || c_p73_11 ==1)%%00010%%00009out_p73_3 = 1;%%00010else %%00010%%00009out_p73_3 = 2;%%00010%%00010//Categorizar drogas de 74%%00010%%00010if(c_p74c == 1 &amp;&amp; c_p74d ==1 &amp;&amp; c_p74e == 1 &amp;&amp; c_p74f == 1 &amp;&amp; c_p74g == 1 &amp;&amp; c_p74h == 1 &amp;&amp; c_p74i == 1)%%00010%%00009%%00009out_p74c = 1; //Ninguna%%00010else if(c_p74c == 2 || c_p74d ==2 || c_p74e == 2 || c_p74f == 2 || c_p74g == 2 || c_p74h == 2 || c_p74i == 2)%%00010%%00009%%00009out_p74c = 2; // Al menos una vez%%00010else if(c_p74c == 3 || c_p74d ==3 || c_p74e == 3 || c_p74f == 3 || c_p74g == 3 || c_p74h == 3 || c_p74i == 3)%%00010%%00009%%00009out_p74c = 3; // Dos o tres veces al mes%%00010else if(c_p74c == 4 || c_p74d ==4 || c_p74e == 4 || c_p74f == 4 || c_p74g == 4 || c_p74h == 4 || c_p74i == 4)%%00010%%00009%%00009out_p74c = 4; // Uno o dos dias a la semana%%00010else if(c_p74c == 5 || c_p74d ==5 || c_p74e == 5 || c_p74f == 5 || c_p74g == 5 || c_p74h == 5 || c_p74i == 5)%%00010%%00009%%00009out_p74c = 5; // Mas de dos dias a la semana%%00010%%00010//Reagrupar s6, s7 y s8 (Se guarda en s6)%%00010%%00010if(c_s6 == 1 &amp;&amp; c_s7== 1)%%00010%%00009out_s6 = 1;// Sí trabaja y obtiene sus ingresos mediante sueldo fijo con prestaciones%%00010else if(c_s6 == 1 &amp;&amp; c_s7 == 2)%%00010%%00009out_s6 = 2;// Sí trabaja y obtiene sus ingresos mediante sueldo fijo sin prestaciones%%00010else if(c_s6 == 1 &amp;&amp; c_s7 == 3)%%00010%%00009out_s6 = 3;// Sí trabaja y obtiene sus ingresos mediante hora o día de trabajo%%00010else if(c_s6 == 1 &amp;&amp; c_s7 == 4)%%00010%%00009out_s6 = 4;// Sí trabaja y obtiene sus ingresos mediante destajo%%00010else if(c_s6 == 1 &amp;&amp; c_s7 == 5)%%00010%%00009out_s6 = 5;// Sí trabaja y obtiene sus ingresos mediante comisión o porcentaje%%00010else if(c_s6 == 1 &amp;&amp; c_s7 == 6)%%00010%%00009out_s6 = 6;// Sí trabaja y obtiene sus ingresos mediante propinas%%00010else if(c_s6 == 1 &amp;&amp; c_s7 == 7)%%00010%%00009out_s6 = 7;// Sí trabaja y obtiene sus ingresos mediante recibir ganancias%%00010else if(c_s6 == 1 &amp;&amp; c_s7 == 8)%%00010%%00009out_s6 = 8;// Sí trabaja y obtiene sus ingresos mediante consumir de lo que produce o vende%%00010else if(c_s6 == 1 &amp;&amp; c_s7 == 9)%%00010%%00009out_s6 = 9;// Sí trabaja y obtiene sus ingresos mediante paga con mercancía o productos comerciables%%00010else if(c_s6 == 1 &amp;&amp; c_s7 == 10)%%00010%%00009out_s6 = 10;//%%00009Sí trabaja y no obtiene ingresos.%%00010else if(c_s6 == 2 &amp;&amp; c_s8 == 1)%%00010%%00009out_s6 = 11;//%%00009No trabaja porque es ama de casa%%00010else if(c_s6 == 2 &amp;&amp; c_s8 == 2)%%00010%%00009out_s6 = 12;//%%00009No trabaja porque estudia%%00010else if(c_s6 == 2 &amp;&amp; c_s8 == 3)%%00010%%00009out_s6 = 13;//%%00009No trabaja porque es jubilado o pensionado%%00010else if(c_s6 == 2 &amp;&amp; c_s8 == 4)%%00010%%00009out_s6 = 14;//%%00009No trabaja porque no encuentra empleo%%00010else if(c_s6 == 2 &amp;&amp; c_s8 == 5)%%00010%%00009out_s6 = 15;//%%00009No trabaja porque no he buscado empleo%%00010else if(c_s6 == 1 &amp;&amp; c_s8 == -1 )%%00010%%00009out_s6 = 16;// Son los que si trabajan y no tienen necesidad de contestar s8%%00010else if(c_s6 == 2 &amp;&amp; c_s7 == -1 )%%00010%%00009out_s6 = 16;// Son los que no trabajan y no tienen necesidad de contestar s7%%00010%%00010%%00010"/>
+<entry key="scriptBody" type="xstring" value="// Enter your code here:%%00010%%00010if(c_p45 &lt; 6)%%00010%%00009%%00009out_p45 = 1; //Menor 6, calificacion reprobatoria%%00010else if(c_p45 &lt; 7)%%00010%%00009%%00009out_p45 = 2; //6 - 6.9%%00010%%00009else if(c_p45 &lt; 8)%%00010%%00009%%00009out_p45 = 3; //7 - 7.9%%00010%%00009else if(c_p45 &lt; 9)%%00010%%00009%%00009out_p45 = 4; //8 - 8.9%%00010%%00009else if(c_p45 &lt;= 10)%%00010%%00009%%00009out_p45 = 5; //9 - 10%%00010%%00010//Reagrupar p47 y p48 (Se guarda el p47)%%00010if(c_p47 == 1 &amp;&amp; c_p48 == 1)%%00010%%00009out_p47 = 1;%%00010else if(c_p47 == 1 &amp;&amp; c_p48 == 2)%%00010%%00009out_p47 = 2;%%00010else if(c_p47 == 2 &amp;&amp; c_p48 == 1)%%00010%%00009out_p47 = 3;%%00010else if(c_p47 == 2 &amp;&amp; c_p48 == 2)%%00010%%00009out_p47 = 4;%%00010else if(c_p47 == 3 &amp;&amp; c_p48 == 1)%%00010%%00009out_p47 = 5;%%00010else if(c_p47 == 3 &amp;&amp; c_p48 == 2)%%00010%%00009out_p47 = 6;%%00010else if(c_p47 == 4 &amp;&amp; c_p48 == -1)%%00010%%00009out_p47 = 7;%%00010%%00010//Reagrupar p50 solo en minutos%%00010 out_p50h =  c_p50m + c_p50h*60;%%00010%%00010//Reagrupar p57%%00010%%00010if(c_p57 &lt; 6)%%00010%%00009out_p57 = 1;//Menor 6, calificacion reprobatoria%%00010else if(c_p57 &lt; 7)%%00010%%00009out_p57 = 2; //6 - 6.9%%00010else if(c_p57 &lt; 8)%%00010%%00009out_p57 = 3; //7 - 7.9%%00010else if(c_p57 &lt; 9)%%00010%%00009out_p57 = 4; //8 - 8.9%%00010else if(c_p57 &lt;= 10)%%00010%%00009out_p57 = 5; //9 - 10%%00010%%00010//Reagrupar p71%%00010%%00010if(c_p71 == 4)%%00010%%00009out_p71 = 1;%%00010else if(c_p71  == 1)%%00010%%00009out_p71 = 2;%%00010else if(c_p71  == 2)%%00010%%00009out_p71 = 3;%%00010else if(c_p71  == 3)%%00010%%00009out_p71 = 4;%%00009%%00010%%00010//Categorizar 73%%00010%%00010if(c_p73_1 == 1 || c_p73_2 == 1 || c_p73_15 == 1)%%00010%%00009out_p73_1 = 1;%%00010else%%00010%%00009out_p73_1 = 2;%%00010if(c_p73_4 == 1 || c_p73_10 == 1 || c_p73_13 == 1 || c_p73_14 == 1)%%00010%%00009out_p73_2 = 1;%%00010else%%00010%%00009out_p73_2 = 2;%%00010if(c_p73_3 == 1 || c_p73_6 == 1 || c_p73_8 == 1 || c_p73_11 ==1)%%00010%%00009out_p73_3 = 1;%%00010else %%00010%%00009out_p73_3 = 2;%%00010%%00010//Categorizar drogas de 74%%00010%%00010if(c_p74c == 1 &amp;&amp; c_p74d ==1 &amp;&amp; c_p74e == 1 &amp;&amp; c_p74f == 1 &amp;&amp; c_p74g == 1 &amp;&amp; c_p74h == 1 &amp;&amp; c_p74i == 1)%%00010%%00009%%00009out_p74c = 1; //Ninguna%%00010else if(c_p74c == 2 || c_p74d ==2 || c_p74e == 2 || c_p74f == 2 || c_p74g == 2 || c_p74h == 2 || c_p74i == 2)%%00010%%00009%%00009out_p74c = 2; // Al menos una vez%%00010else if(c_p74c == 3 || c_p74d ==3 || c_p74e == 3 || c_p74f == 3 || c_p74g == 3 || c_p74h == 3 || c_p74i == 3)%%00010%%00009%%00009out_p74c = 3; // Dos o tres veces al mes%%00010else if(c_p74c == 4 || c_p74d ==4 || c_p74e == 4 || c_p74f == 4 || c_p74g == 4 || c_p74h == 4 || c_p74i == 4)%%00010%%00009%%00009out_p74c = 4; // Uno o dos dias a la semana%%00010else if(c_p74c == 5 || c_p74d ==5 || c_p74e == 5 || c_p74f == 5 || c_p74g == 5 || c_p74h == 5 || c_p74i == 5)%%00010%%00009%%00009out_p74c = 5; // Mas de dos dias a la semana%%00010%%00010%%00010//Categorizar s3%%00010if(c_s3 &lt; 18)%%00010%%00009%%00009out_s3 = 1; //Menor de edad%%00010else%%00010%%00009%%00009out_s3 = 2; //Mayor de edad%%00010%%00010%%00010//Reagrupar s6, s7 y s8 (Se guarda en s6)%%00010%%00010if(c_s6 == 1 &amp;&amp; c_s7== 1)%%00010%%00009out_s6 = 1;// Sí trabaja y obtiene sus ingresos mediante sueldo fijo con prestaciones%%00010else if(c_s6 == 1 &amp;&amp; c_s7 == 2)%%00010%%00009out_s6 = 2;// Sí trabaja y obtiene sus ingresos mediante sueldo fijo sin prestaciones%%00010else if(c_s6 == 1 &amp;&amp; c_s7 == 3)%%00010%%00009out_s6 = 3;// Sí trabaja y obtiene sus ingresos mediante hora o día de trabajo%%00010else if(c_s6 == 1 &amp;&amp; c_s7 == 4)%%00010%%00009out_s6 = 4;// Sí trabaja y obtiene sus ingresos mediante destajo%%00010else if(c_s6 == 1 &amp;&amp; c_s7 == 5)%%00010%%00009out_s6 = 5;// Sí trabaja y obtiene sus ingresos mediante comisión o porcentaje%%00010else if(c_s6 == 1 &amp;&amp; c_s7 == 6)%%00010%%00009out_s6 = 6;// Sí trabaja y obtiene sus ingresos mediante propinas%%00010else if(c_s6 == 1 &amp;&amp; c_s7 == 7)%%00010%%00009out_s6 = 7;// Sí trabaja y obtiene sus ingresos mediante recibir ganancias%%00010else if(c_s6 == 1 &amp;&amp; c_s7 == 8)%%00010%%00009out_s6 = 8;// Sí trabaja y obtiene sus ingresos mediante consumir de lo que produce o vende%%00010else if(c_s6 == 1 &amp;&amp; c_s7 == 9)%%00010%%00009out_s6 = 9;// Sí trabaja y obtiene sus ingresos mediante paga con mercancía o productos comerciables%%00010else if(c_s6 == 1 &amp;&amp; c_s7 == 10)%%00010%%00009out_s6 = 10;//%%00009Sí trabaja y no obtiene ingresos.%%00010else if(c_s6 == 2 &amp;&amp; c_s8 == 1)%%00010%%00009out_s6 = 11;//%%00009No trabaja porque es ama de casa%%00010else if(c_s6 == 2 &amp;&amp; c_s8 == 2)%%00010%%00009out_s6 = 12;//%%00009No trabaja porque estudia%%00010else if(c_s6 == 2 &amp;&amp; c_s8 == 3)%%00010%%00009out_s6 = 13;//%%00009No trabaja porque es jubilado o pensionado%%00010else if(c_s6 == 2 &amp;&amp; c_s8 == 4)%%00010%%00009out_s6 = 14;//%%00009No trabaja porque no encuentra empleo%%00010else if(c_s6 == 2 &amp;&amp; c_s8 == 5)%%00010%%00009out_s6 = 15;//%%00009No trabaja porque no he buscado empleo%%00010else if(c_s6 == 1 &amp;&amp; c_s8 == -1 )%%00010%%00009out_s6 = 16;// Son los que si trabajan y no tienen necesidad de contestar s8%%00010else if(c_s6 == 2 &amp;&amp; c_s7 == -1 )%%00010%%00009out_s6 = 16;// Son los que no trabajan y no tienen necesidad de contestar s7%%00010%%00010//Categorizar s12%%00010if(c_s12 == 0 || c_s12 &lt;= 1500)%%00010%%00009%%00009out_s12 =  1; // De 0 a 1500%%00010else if(c_s12 == 1501 || c_s12 &lt;= 3000)%%00010%%00009%%00009out_s12 = 2;// De 1501 a 3000%%00010else if(c_s12 == 3001 || c_s12 &lt;= 5000)%%00010%%00009%%00009out_s12 = 3;// %%00010else if(c_s12 == 5001 || c_s12 &lt;= 8000)%%00010%%00009%%00009out_s12 = 4;// %%00010else if(c_s12 == 8001 || c_s12 &lt;= 10000)%%00010%%00009%%00009out_s12 = 5;// %%00010else if(c_s12 == 10001 || c_s12 &lt;= 15000)%%00010%%00009%%00009out_s12 = 6;// %%00010else if(c_s12 == 15001 || c_s12 &lt;= 20000)%%00010%%00009%%00009out_s12 = 7;// %%00010else if(c_s12 &gt; 20000)%%00010%%00009%%00009out_s12 = 8;// %%00010%%00010"/>
 <config key="jarFiles">
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="outCols">
-<entry key="array-size" type="xint" value="9"/>
+<entry key="array-size" type="xint" value="12"/>
 <config key="0">
 <entry key="Name" type="xstring" value="p47"/>
 <entry key="JavaName" type="xstring" value="out_p47"/>
@@ -113,12 +113,45 @@
 <entry key="ConverterFactory" type="xstring" value="org.knime.core.data.def.IntCell$IntCellFactory.create(class java.lang.Integer)"/>
 <entry key="replaceExisting" type="xboolean" value="true"/>
 </config>
+<config key="9">
+<entry key="Name" type="xstring" value="p45"/>
+<entry key="JavaName" type="xstring" value="out_p45"/>
+<entry key="JavaType" type="xstring" value="java.lang.Integer"/>
+<config key="Type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
+<entry key="is_null" type="xboolean" value="false"/>
+</config>
+<entry key="ConverterFactory" type="xstring" value="org.knime.core.data.def.IntCell$IntCellFactory.create(class java.lang.Integer)"/>
+<entry key="replaceExisting" type="xboolean" value="true"/>
+</config>
+<config key="10">
+<entry key="Name" type="xstring" value="s3"/>
+<entry key="JavaName" type="xstring" value="out_s3"/>
+<entry key="JavaType" type="xstring" value="java.lang.Integer"/>
+<config key="Type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
+<entry key="is_null" type="xboolean" value="false"/>
+</config>
+<entry key="ConverterFactory" type="xstring" value="org.knime.core.data.def.IntCell$IntCellFactory.create(class java.lang.Integer)"/>
+<entry key="replaceExisting" type="xboolean" value="true"/>
+</config>
+<config key="11">
+<entry key="Name" type="xstring" value="s12"/>
+<entry key="JavaName" type="xstring" value="out_s12"/>
+<entry key="JavaType" type="xstring" value="java.lang.Integer"/>
+<config key="Type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
+<entry key="is_null" type="xboolean" value="false"/>
+</config>
+<entry key="ConverterFactory" type="xstring" value="org.knime.core.data.def.IntCell$IntCellFactory.create(class java.lang.Integer)"/>
+<entry key="replaceExisting" type="xboolean" value="true"/>
+</config>
 </config>
 <config key="outVars">
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="inCols">
-<entry key="array-size" type="xint" value="27"/>
+<entry key="array-size" type="xint" value="30"/>
 <config key="0">
 <entry key="Name" type="xstring" value="p47"/>
 <entry key="JavaName" type="xstring" value="c_p47"/>
@@ -389,6 +422,36 @@
 </config>
 <entry key="ConverterFactory" type="xstring" value="org.knime.core.data.convert.java.SimpleDataCellToJavaConverterFactory(IntValue,class java.lang.Integer,Integer)"/>
 </config>
+<config key="27">
+<entry key="Name" type="xstring" value="p45"/>
+<entry key="JavaName" type="xstring" value="c_p45"/>
+<entry key="JavaType" type="xstring" value="java.lang.Double"/>
+<config key="Type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+<entry key="is_null" type="xboolean" value="false"/>
+</config>
+<entry key="ConverterFactory" type="xstring" value="org.knime.core.data.convert.java.SimpleDataCellToJavaConverterFactory(DoubleValue,class java.lang.Double,Double)"/>
+</config>
+<config key="28">
+<entry key="Name" type="xstring" value="s3"/>
+<entry key="JavaName" type="xstring" value="c_s3"/>
+<entry key="JavaType" type="xstring" value="java.lang.Integer"/>
+<config key="Type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
+<entry key="is_null" type="xboolean" value="false"/>
+</config>
+<entry key="ConverterFactory" type="xstring" value="org.knime.core.data.convert.java.SimpleDataCellToJavaConverterFactory(IntValue,class java.lang.Integer,Integer)"/>
+</config>
+<config key="29">
+<entry key="Name" type="xstring" value="s12"/>
+<entry key="JavaName" type="xstring" value="c_s12"/>
+<entry key="JavaType" type="xstring" value="java.lang.Integer"/>
+<config key="Type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
+<entry key="is_null" type="xboolean" value="false"/>
+</config>
+<entry key="ConverterFactory" type="xstring" value="org.knime.core.data.convert.java.SimpleDataCellToJavaConverterFactory(IntValue,class java.lang.Integer,Integer)"/>
+</config>
 </config>
 <config key="inVars">
 <entry key="array-size" type="xint" value="0"/>
@@ -441,6 +504,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="3c131883-da27-4e61-99e1-32ef48882238"/>
+<entry key="file_store_id" type="xstring" value="7d7d085a-c37f-4031-afb8-d04c95a5b146"/>
 </config>
 </config>
